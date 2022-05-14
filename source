@@ -1,0 +1,29 @@
+local mouse = game.Players.LocalPlayerGetMouse()
+function Light()
+    player = game.Players.LocalPlayer
+    playerChar = player.Character
+    playerLight = playerChar.TorsoFindFirstChild(Light)
+    if playerLight then
+        playerLightDestroy()
+    else
+        light = Instance.new(SurfaceLight,playerCharFindFirstChild(Torso))
+        light.Name = Light
+        light.Range = 75 -- Change to distance ofthe Light.
+        light.Brightness = 25 -- Change to how much.
+        light.Shadows = false -- Change it to TrueFalse.
+
+        
+        local play = Instance.new(Sound,playerCharFindFirstChild(Head))
+        play.SoundId = httpwww.roblox.comassetid=198914875 --Change the 198914875 to any sound ID you want.
+        playPlay()
+        
+    end
+end
+mouse.KeyDownconnect(function(key)
+key = keylower()
+if key == f then -- Change this to any Keys but I reccomand leaving it as [F] key.
+    Light()
+end
+end)
+
+-- Made by iKennyHuynh
